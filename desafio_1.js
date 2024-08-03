@@ -1,16 +1,17 @@
-function receta(heladera, ingredientes, faltantes){
-for (let index = 0; index < ingredientes.length; index++) {
-    const element = ingredientes[index];
-    if(!heladera.includes(element)){
-        faltantes.push(element)
+function arco(x, y) {
+    if (x > 0 && x < 732) {
+        if (y <= 232) {
+            console.log("GOOOL");
+        }
+    } else {
+        if (y <= 232) {
+            console.log("PALO");
+        }
     }
 }
-return faltantes; 
-}
 
-const h =["leche", "huevo", "naranjas", "bananas", "agua", "manteca", "dulce de leche", "escencia de vainilla","huevo","huevo", "leche", "bananas"];
-const i = ["leche", "huevo", "huevo", "harina", "manzanas"]; 
-let f = []; 
+arco(230,150)
+arco(732,232)
+arco(0,150)
+arco(500,200)
 
-f = receta(h, i, f); 
-console.log(f);
